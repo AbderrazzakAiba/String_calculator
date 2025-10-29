@@ -1,14 +1,11 @@
+import pytest
+
 from src.String_calculator import Add
-
-
-def test_function_is_callable():
- Add("0")
-
-def test_empty_string_returns_zero():
-    assert Add("") == 0
-def test_1_returns_1():
-    assert Add("1") == 1
-def test_2_returns_2():
-    assert Add("2") == 2
-def test_3_returns_3():
-    assert Add("3") == 3
+@pytest.mark.parametrize("string, expected_result", [
+    ("", 0),
+    ("1", 1),
+    ("2", 2),
+    ("3", 3)
+])
+def test_number_return_itself(string, expected_result):
+    assert Add(string) == expected_result

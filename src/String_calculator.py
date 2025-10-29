@@ -1,4 +1,4 @@
-def Add(numbers: str) -> str:
-    if numbers == "":
+def Add(string: str) -> int:
+    if string == "":
         return 0
-    return int(numbers)
+    return int(string)
