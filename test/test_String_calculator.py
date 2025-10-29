@@ -10,3 +10,5 @@ def test_1_returns_1():
     assert Add("1") == 1
 def test_2_returns_2():
     assert Add("2") == 2
+def test_3_returns_3():
+    assert Add("3") == 3
