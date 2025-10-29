@@ -8,3 +8,5 @@ def test_empty_string_returns_zero():
     assert Add("") == 0
 def test_1_returns_1():
     assert Add("1") == 1
+def test_2_returns_2():
+    assert Add("2") == 2
