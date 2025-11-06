@@ -5,3 +5,4 @@ def Add(string: str) -> int:
         parts = string.split(",")
         return int(parts[0]) + int(parts[1])
     return int(string)
+#
